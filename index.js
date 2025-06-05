@@ -19,7 +19,7 @@ app.post("/login", async (req, res) => {
     res.send(await login(req.body));
 });
 app.use("/usuarios", rotaProtegida, usuariosRoutes);
-app.use("/produtos", rotaProtegida, produtosRoutes);
+app.use("/produtos", produtosRoutes);
 
 
 // erro 404
